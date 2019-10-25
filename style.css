@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Helvetica-neue', sans-serif;
 }
 
 a {
@@ -141,6 +141,49 @@ header {
     border-right: none;
 }
 
+
+
+#canNotLessContainer {
+    width: 100%;
+    /* NB ho messo del margine negativo perchè l'ultima immagine del contenitore perecedente è più alta delle alte e manda tutto il layout in rovina!!!! */
+    margin: -10px auto;
+    background-color: #022B41;
+
+}
+#canNotLess {
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+}
+
+#canNotLess div{
+
+    padding: 30px;
+}
+
+#canNotLess h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px auto;
+
+
+}
+
+#canNotLess img{
+    width: 90px;
+    height: 90px;
+
+}
+
+#canNotLess div:first-child h1{
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+
 @media screen and (max-width: 1440px) {
     #jumbo {
         height: 650px;
@@ -152,12 +195,18 @@ header {
 }
 
 @media screen and (max-width: 1300px) {
+
+
+
     #jumbo {
         height: 550px;
     }
 }
 
 @media screen and (max-width: 1200px) {
+
+
+
     #jumbo {
         height: 920px;
         padding-right: 0;
@@ -177,9 +226,14 @@ header {
         width: 50%;
         transform: translateX(-50%);
     }
+
 }
 
 @media screen and (max-width: 1023px) {
+    #movies .col-lg-3:nth-child(3) img {
+        border-right: none;
+    }
+
 
     #accedi {
         background: transparent;
@@ -207,7 +261,20 @@ header {
     }
 }
 
+@media screen and (max-width:992px) {
+
+    #movies .col-lg-3:nth-child(3) img {
+        border-right: none;
+    }
+
+
+}
+
 @media screen and (max-width: 767px) {
+
+    #movies .col-lg-3:nth-child(2) img {
+        border-right: none;
+    }
 
     header {
         height: 50px;

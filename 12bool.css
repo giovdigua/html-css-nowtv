@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-.container::after {
+.clear:after {
     clear: both;
     display: table;
     content: '';
