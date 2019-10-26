@@ -144,14 +144,16 @@ header {
 
 
 #canNotLessContainer {
-    width: 100%;
+
     /* NB ho messo del margine negativo perchè l'ultima immagine del contenitore perecedente è più alta delle alte e manda tutto il layout in rovina!!!! */
     margin: -10px auto;
     background-color: #022B41;
 
 }
 #canNotLess {
-    width: 980px;
+    width: 100%;
+    padding: 0 30px;
+
     text-align: center;
     margin: 0 auto;
     color: white;
@@ -181,7 +183,7 @@ header {
 #canNotLess div:first-child h1{
     font-size: 36px;
     font-weight: 400;
-    
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -267,10 +269,14 @@ header {
         border-right: none;
     }
 
+    #canNotLess div:first-child h1{
+        font-size: 30px;
+    }
+
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     #movies .col-lg-3:nth-child(2) img {
         border-right: none;
@@ -314,5 +320,9 @@ header {
 
     #ribbon .button {
         margin-left: 0;
+    }
+
+    #canNotLess div:first-child h1{
+        font-size: 22px;
     }
 }
